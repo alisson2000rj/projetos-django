@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listagem</title>
+</head>
+<body>
+    <h1> Seja Bem vindo!!!!</h1>
+    <br/>
+    <h1> Primeiro Projeto Django!!!!</h1>
+    <br/><br/>
+    <p> Hora atual : {{ now }} no {{pais}} </p>
+    <br/><br/>
+    <!--
+    <ul>
+    {% for transacao in transacoes %}
+        {% if transacao == "t1" %}
+            <li><b> {{transacao}} </b></li>
+        {% else %}
+            <li> {{transacao}} </li>
+        {% endif%}
+    {%endfor%}
+    </ul>
+    -->
+<!--
+<a href="{% url 'url_nova' %}">  Novo   </a>
+<br/>
+<a href="{% url 'url_listagem' %}">  Listagem   </a>
+-->
+<br/>
+<form method="get" action="nova">
+    <button type="submit">Nova Transação</button>
+</form>
+<br/>
+<form method="get" action="listagem">
+    <button type="submit">Listagem</button>
+</form>
+
+
+</body>
+</html>

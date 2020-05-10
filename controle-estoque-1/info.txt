@@ -1,0 +1,34 @@
+#### Uso do python3
+
+# virtual env
+- para python3
+virtualenv venv --python='/usr/bin/python3.5'
+
+- ativar ambiente
+source venv/bin/activate
+
+- desativar ambiente
+deactivate
+
+- intalação do django
+pip install django
+
+
+- cria ambiente django
+django-admin startproject controle_gastos .
+
+- cria app
+python manage.py startapp contas
+
+- cria banco de dados
+python manage.py migrate
+
+- roda o django
+python manage.py runserver
+
+- cria um super usuario para administração
+python manage.py createsuperuser
+
+- cria tabela no banco
+python manage.py makemigrations
+python manage.py migrate
